@@ -3,7 +3,7 @@ package lesson3.server;
 import lesson3.authentication.AuthenticationService;
 
 /**
- * Java Core. Professional level. Lesson 2
+ * Java Core. Professional level. Lesson 3
  *
  * @author Zurbaevi Nika
  */
