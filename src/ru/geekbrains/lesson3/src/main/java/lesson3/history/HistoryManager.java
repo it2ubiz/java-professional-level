@@ -17,11 +17,9 @@ public class HistoryManager {
         try {
             File history = new File("history_" + name + ".txt");
             if (!history.exists()) {
-                System.out.println("Файла истории нет,создадим его");
                 history.createNewFile();
             }
             PrintWriter fileWriter = new PrintWriter(new FileWriter(history, true));
-
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(String.valueOf(chatLog));
             bufferedWriter.close();
