@@ -8,13 +8,11 @@ import java.sql.*;
  * @author Zurbaevi Nika
  */
 public class SQLService {
+    private static final String urlConnectionDatabase = "jdbc:sqlite:C:\\Users\\Zurbaevi Nika\\Documents\\GitHub\\Java-Professional-level\\src\\ru\\geekbrains\\lesson4\\src\\main\\java\\lesson4\\secondtask\\database\\firstDatabase.db";
     private static Connection connection;
     private static PreparedStatement psGetNick;
     private static PreparedStatement psReg;
     private static PreparedStatement psChangeNick;
-
-    private static final String urlConnectionDatabase = "jdbc:sqlite:C:\\Users\\Zurbaevi Nika\\Documents\\GitHub\\Java-Professional-level\\src\\ru\\geekbrains\\lesson4\\src\\main\\java\\lesson4\\secondtask\\database\\firstDatabase.db";
-
 
     public static boolean connect() {
         try {

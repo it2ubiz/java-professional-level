@@ -23,10 +23,6 @@ public class ChatServer implements Server {
     private ServerSocket serverSocket;
     private ExecutorService executorService;
 
-    public ExecutorService getExecutorService() {
-        return executorService;
-    }
-
     public ChatServer() {
         executorService = Executors.newCachedThreadPool();
         try {
@@ -55,6 +51,10 @@ public class ChatServer implements Server {
                 e.printStackTrace();
             }
         }
+    }
+
+    public ExecutorService getExecutorService() {
+        return executorService;
     }
 
     @Override
