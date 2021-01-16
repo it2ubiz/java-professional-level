@@ -5,7 +5,7 @@
 * [Урок 1.](https://github.com/zurbaevi/Java-Professional-level/tree/main/src/ru/geekbrains/lesson1) Обобщения
 * [Урок 2.](https://github.com/zurbaevi/Java-Professional-level/tree/main/src/ru/geekbrains/lesson2) Базы данных
 * [Урок 3.](https://github.com/zurbaevi/Java-Professional-level/tree/main/src/ru/geekbrains/lesson3) Средства ввода-вывода
-* [Урок 4. In Pull request](https://github.com/zurbaevi/Java-Professional-level/pull/4) Многопоточность. Часть I
+* [Урок 4.](https://github.com/zurbaevi/Java-Professional-level/tree/main/src/ru/geekbrains/lesson4) Многопоточность. Часть I
 * [Урок 5. 18 янв., 21:00]() Многопоточность. Часть II
 * [Урок 6. 21 янв., 21:00]() Обзор средств разработки
 * [Урок 7. 25 янв., 21:00]() Reflection API и аннотации
