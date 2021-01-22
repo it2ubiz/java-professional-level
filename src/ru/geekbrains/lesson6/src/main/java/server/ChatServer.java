@@ -27,14 +27,12 @@ public class ChatServer implements Server {
     private ExecutorService executorService;
 
     public ChatServer() {
+        SQLService.getInstance();
         executorService = Executors.newCachedThreadPool();
         try {
             LOGGER.info("Server is running");
             serverSocket = new ServerSocket(8081);
             clients = new HashSet<>();
-            if (!SQLService.connect()) {
-                throw new RuntimeException("Failed to connect to database");
-            }
             authenticationService = new AuthenticationService();
             while (true) {
                 LOGGER.info("Server is waiting for connection");
@@ -43,15 +41,14 @@ public class ChatServer implements Server {
                 new ClientHandler(this, socket);
             }
         } catch (Exception exception) {
-            LOGGER.error("Server error");
-            exception.printStackTrace();
+            LOGGER.error("Server error: " + exception.getMessage());
         } finally {
             SQLService.disconnect();
             executorService.shutdown();
             try {
                 serverSocket.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                LOGGER.error("Server socket: " + e.getMessage());
             }
             LOGGER.info("Server shut down");
         }

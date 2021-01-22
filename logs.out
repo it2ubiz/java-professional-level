@@ -8,3 +8,27 @@
 22 Jan 2021 23:53:36  INFO - Server is waiting for connection
 22 Jan 2021 23:53:45  INFO - Client connected
 22 Jan 2021 23:53:45  INFO - Server is waiting for connection
+23 Jan 2021 00:04:24  INFO - Server is running
+23 Jan 2021 00:04:24  INFO - Server is waiting for connection
+23 Jan 2021 00:04:25  INFO - Server is running
+23 Jan 2021 00:04:25 ERROR - Server error: Address already in use: bind
+23 Jan 2021 00:06:49  INFO - Server is running
+23 Jan 2021 00:06:50  INFO - Server is waiting for connection
+23 Jan 2021 00:06:52  INFO - Server is running
+23 Jan 2021 00:06:52 ERROR - Server error: Address already in use: bind
+23 Jan 2021 00:08:04  INFO - Server is running
+23 Jan 2021 00:08:04  INFO - Server is waiting for connection
+23 Jan 2021 00:08:06  INFO - Server is running
+23 Jan 2021 00:08:06 ERROR - Server error: Address already in use: bind
+23 Jan 2021 00:08:25  INFO - Server is running
+23 Jan 2021 00:08:25  INFO - Server is waiting for connection
+23 Jan 2021 00:08:27  INFO - Server is running
+23 Jan 2021 00:08:27 ERROR - Server error: Address already in use: bind
+23 Jan 2021 00:09:34  INFO - Server is running
+23 Jan 2021 00:09:35  INFO - Server is waiting for connection
+23 Jan 2021 00:09:36  INFO - Server is running
+23 Jan 2021 00:09:36 ERROR - Server error: Address already in use: bind
+23 Jan 2021 00:10:38  INFO - Server is running
+23 Jan 2021 00:10:39  INFO - Server is waiting for connection
+23 Jan 2021 00:11:00  INFO - Server is running
+23 Jan 2021 00:11:00  INFO - Server is waiting for connection

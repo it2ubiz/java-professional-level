@@ -9,9 +9,9 @@ import java.util.Arrays;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(doIt(new int[]{3, 4, 1, 5, 9, 4, 4, 7, 4, 8, 6})));
-        System.out.println(Arrays.toString(doIt(new int[]{4, 9, 8, 7, 6, 5, 4, 3, 2, 1})));
-        System.out.println(Arrays.toString(doIt(new int[]{1, 1})));
+        System.out.println(Arrays.toString(doIt(new int[]{8, 4, 1, 57, 9, 45, 4, 6, 44, 8, 2})));
+        System.out.println(Arrays.toString(doIt(new int[]{4, 2, 85, 7, 96, 5, 2, 2, 2, 1})));
+        System.out.println(Arrays.toString(doIt(new int[]{1, 1, 5, 7})));
     }
 
     public static int[] doIt(int[] array) throws RuntimeException {

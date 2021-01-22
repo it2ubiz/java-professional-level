@@ -10,11 +10,23 @@ import java.sql.*;
 public class SQLService {
     private static final String urlConnectionDatabase = "jdbc:sqlite:C:\\Users\\Zurbaevi Nika\\Desktop\\Java-Professional-level\\src\\ru\\geekbrains\\lesson6\\src\\main\\java\\database\\firstDatabase.db";
     private static Connection connection;
+    private static SQLService instance;
     private static PreparedStatement psGetNick;
     private static PreparedStatement psReg;
     private static PreparedStatement psChangeNick;
+    private static boolean isConnected;
 
-    public static boolean connect() {
+    private SQLService() {
+        try {
+            connect();
+            prepareAllStatements();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            System.exit(0);
+        }
+    }
+
+    private static boolean connect() {
         try {
             Class.forName("org.sqlite.JDBC");
             connection = DriverManager.getConnection(urlConnectionDatabase);
@@ -26,7 +38,7 @@ public class SQLService {
         }
     }
 
-    public static void prepareAllStatements() throws SQLException {
+    private static void prepareAllStatements() throws SQLException {
         psGetNick = connection.prepareStatement("SELECT name FROM users WHERE name = ? AND password = ?;");
         psReg = connection.prepareStatement("INSERT INTO users (name, password) VALUES (?, ?);");
         psChangeNick = connection.prepareStatement("UPDATE users SET name = ? WHERE name = ?;");
@@ -85,5 +97,17 @@ public class SQLService {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public static SQLService getInstance() {
+        if (instance == null) {
+            synchronized (SQLService.class) {
+                if (instance == null) {
+                    instance = new SQLService();
+                    isConnected = true;
+                }
+            }
+        }
+        return instance;
     }
 }
