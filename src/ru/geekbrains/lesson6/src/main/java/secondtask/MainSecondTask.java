@@ -1,4 +1,4 @@
-package secondtast;
+package secondtask;
 
 import java.util.Arrays;
 
@@ -7,7 +7,7 @@ import java.util.Arrays;
  *
  * @author Zurbaevi Nika
  */
-public class Main {
+public class MainSecondTask {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(doIt(new int[]{1, 2, 4, 4, 2, 3, 4, 1, 7})));
         System.out.println(Arrays.toString(doIt(new int[]{4, 2, 85, 7, 96, 5, 2, 2, 2, 1})));
