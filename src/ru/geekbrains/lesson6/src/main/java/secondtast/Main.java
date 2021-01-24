@@ -9,29 +9,22 @@ import java.util.Arrays;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(doIt(new int[]{8, 4, 1, 57, 9, 45, 4, 6, 44, 8, 2})));
+        System.out.println(Arrays.toString(doIt(new int[]{1, 2, 4, 4, 2, 3, 4, 1, 7})));
         System.out.println(Arrays.toString(doIt(new int[]{4, 2, 85, 7, 96, 5, 2, 2, 2, 1})));
         System.out.println(Arrays.toString(doIt(new int[]{1, 1, 5, 7})));
     }
 
     public static int[] doIt(int[] array) throws RuntimeException {
-        int[] result;
-        int i = array.length - 1;
-        int j = 0;
-        boolean found = false;
-        while (i >= 0 && !found) {
-            found = array[i] == 4;
-            j = i;
-            i--;
-        }
-        if (found) {
-            result = new int[array.length - j - 1];
-            for (i = j + 1; i < array.length; i++) {
-                result[i - j - 1] = array[i];
+        if (array.length == 0)
+            throw new RuntimeException("empty array");
+        for (int i = array.length - 1; i >= 0; i--) {
+            if (array[i] == 4) {
+                if (i == array.length - 1) return new int[]{};
+                int[] newArray = new int[array.length - i - 1];
+                System.arraycopy(array, i + 1, newArray, 0, array.length - i - 1);
+                return newArray;
             }
-        } else {
-            throw new RuntimeException("there is no 4 in the array");
         }
-        return result;
+        throw new RuntimeException("there is no 4 in the array");
     }
 }
