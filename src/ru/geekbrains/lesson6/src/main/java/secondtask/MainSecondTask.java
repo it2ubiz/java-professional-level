@@ -11,7 +11,7 @@ public class MainSecondTask {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(doIt(new int[]{1, 2, 4, 4, 2, 3, 4, 1, 7})));
         System.out.println(Arrays.toString(doIt(new int[]{4, 2, 85, 7, 96, 5, 2, 2, 2, 1})));
-        System.out.println(Arrays.toString(doIt(new int[]{1, 1, 5, 7})));
+        System.out.println(Arrays.toString(doIt(new int[]{1, 3, 7, 5, 2, 3, 3, 2, 7, 9, 1})));
     }
 
     public static int[] doIt(int[] array) throws RuntimeException {
