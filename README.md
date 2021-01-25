@@ -9,6 +9,5 @@
 * [Урок 5.](https://github.com/zurbaevi/Java-Professional-level/tree/main/src/ru/geekbrains/lesson5) Многопоточность. Часть II
 * [Урок 6.](https://github.com/zurbaevi/Java-Professional-level/tree/main/src/ru/geekbrains/lesson6) Обзор средств разработки
 * [Урок 7. 25 янв., 21:00]() Reflection API и аннотации
-* [Урок 8. 28 янв., 21:00]() Подготовка к собеседованию
 #### [Сертификат будет доступен после успешнего окончании курса]()
 ____
