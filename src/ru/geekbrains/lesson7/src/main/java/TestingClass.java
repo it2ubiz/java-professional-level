@@ -28,8 +28,7 @@ class TestingClass {
             return;
         }
 
-        Method beforeMethod = null;
-        Method afterMethod = null;
+        Method beforeMethod = null, afterMethod = null;
         Method[] methods = cls.getMethods();
         List<MethodsPriority> testingMethods = new ArrayList<>();
 
@@ -66,6 +65,11 @@ class TestingClass {
         }
     }
 
+    @BeforeSuite
+    public void beforeAll() {
+        System.out.println("The method is executed before all tests");
+    }
+
     @Test(priority = 3)
     public void thirdTest() {
         System.out.println("Call test №3");
@@ -89,11 +93,6 @@ class TestingClass {
     @Test(priority = 7)
     public void fiveTest() {
         System.out.println("Call test №5");
-    }
-
-    @BeforeSuite
-    public void beforeAll() {
-        System.out.println("The method is executed before all tests");
     }
 
     @AfterSuite
