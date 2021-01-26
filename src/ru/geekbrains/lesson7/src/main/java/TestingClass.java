@@ -81,6 +81,16 @@ class TestingClass {
         System.out.println("Call test №1");
     }
 
+    @Test(priority = 1)
+    public void fourthTest() {
+        System.out.println("Call test №4");
+    }
+
+    @Test(priority = 7)
+    public void fiveTest() {
+        System.out.println("Call test №5");
+    }
+
     @BeforeSuite
     public void beforeAll() {
         System.out.println("The method is executed before all tests");
