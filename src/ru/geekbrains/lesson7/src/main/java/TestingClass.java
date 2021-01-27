@@ -35,12 +35,12 @@ class TestingClass {
         for (Method method : methods)
             if (method.getAnnotation(BeforeSuite.class) != null) {
                 if (beforeMethod != null) {
-                    throw new RuntimeException("Missing method with @BeforeSuite annotation");
+                    throw new RuntimeException("More than one @BeforeSuite annotation found");
                 }
                 beforeMethod = method;
             } else if (method.getAnnotation(AfterSuite.class) != null) {
                 if (afterMethod != null) {
-                    throw new RuntimeException("Missing method with @AfterSuite annotation");
+                    throw new RuntimeException("More than one @AfterSuite annotation found");
                 }
                 afterMethod = method;
             } else if (method.getAnnotation(Test.class) != null) {
