@@ -8,6 +8,6 @@
 * [Урок 4.](https://github.com/zurbaevi/Java-Professional-level/tree/main/src/ru/geekbrains/lesson4) Многопоточность. Часть I
 * [Урок 5.](https://github.com/zurbaevi/Java-Professional-level/tree/main/src/ru/geekbrains/lesson5) Многопоточность. Часть II
 * [Урок 6.](https://github.com/zurbaevi/Java-Professional-level/tree/main/src/ru/geekbrains/lesson6) Обзор средств разработки
-* [Урок 7. In Pull request](https://github.com/zurbaevi/Java-Professional-level/pull/7) Reflection API и аннотации
+* [Урок 7.](https://github.com/zurbaevi/Java-Professional-level/tree/main/src/ru/geekbrains/lesson7) Reflection API и аннотации
 #### [Сертификат будет доступен после успешнего окончании курса]()
 ____
